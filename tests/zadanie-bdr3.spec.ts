@@ -41,4 +41,4 @@ test('Dodanie butów dziecięcych do koszyka: L, kolor: black', async ({ page })
     await goToShoesDetails(page, 'Chuck taylor all star')
     await addToCartShoes(page, 'L', 'Black')
   
-  });
+  });git pull origin

@@ -25,12 +25,9 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
-    video: {
-      mode: 'on', // Może być 'on', 'off' lub 'retain-on-failure'
-      size: { width: 1280, height: 720 }, // Opcjonalne wymiary wideo
-    },
-    trace: 'on'
+
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+    trace: 'on-first-retry',
   },
 
   /* Configure projects for major browsers */
@@ -38,7 +35,6 @@ export default defineConfig({
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
-     
     },
 
     //{

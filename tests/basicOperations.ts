@@ -56,5 +56,3 @@ function add(a: number, b: number): number {
 
 let suma = add(4, 5)
 console.log(suma)
-
-//consol-log komenda ts-node

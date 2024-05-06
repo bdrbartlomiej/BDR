@@ -1,5 +1,9 @@
 import { test, expect, Page } from '@playwright/test';
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9bfc52a201f939abcb4afb721aa1a3b797bf7489
 async function goToEvershopPage(page: Page) {
     await page.goto('https://demo.evershop.io/');
     await expect(page.locator('.logo-icon')).toBeVisible();
@@ -25,6 +29,10 @@ async function addToCartShoes(page: Page, ShoesSize: string, ShoesColor: string 
     await page.getByRole('button', { name: 'ADD TO CART' }).click();
     await page.waitForTimeout(3000);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9bfc52a201f939abcb4afb721aa1a3b797bf7489
 }
 
 test('Dodanie butów dziecięcych do koszyka: M, kolor: red', async ({ page }) => {
@@ -41,4 +49,8 @@ test('Dodanie butów dziecięcych do koszyka: L, kolor: black', async ({ page })
     await goToShoesDetails(page, 'Chuck taylor all star')
     await addToCartShoes(page, 'L', 'Black')
   
+<<<<<<< HEAD
   });git pull origin
+=======
+  });
+>>>>>>> 9bfc52a201f939abcb4afb721aa1a3b797bf7489
